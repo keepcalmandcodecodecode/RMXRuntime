@@ -8,39 +8,23 @@
 
 // https://github.com/Specta/Specta
 
+#import <RMXRuntime/RMXRuntime.h>
+#define EXP_SHORTHAND
+#import <Expecta/Expecta.h>
+#import <Specta/Specta.h>
+#import <UIKit/UIKit.h>
+#import "SomeNSProxyClass.h"
+
 SpecBegin(InitialSpecs)
 
-describe(@"these will fail", ^{
-
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
-    });
-
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
-    });
-    
-    it(@"will wait for 10 seconds and fail", ^{
-        waitUntil(^(DoneCallback done) {
-        
-        });
-    });
-});
-
 describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
+    it(@"classname from NSObject", ^{
+        NSObject *someObject = [NSObject new];
+        expect(NSStringFromClass([someObject class])).to.equal([someObject rmx_classname]);
     });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^{
-        waitUntil(^(DoneCallback done) {
-            done();
-        });
+    it(@"classname from NSProxy", ^{
+        SomeNSProxyClass *someNSProxyObject = [[SomeNSProxyClass alloc] init];
+        expect(NSStringFromClass([someNSProxyObject class])).to.equal([someNSProxyObject rmx_classname]);
     });
 });
 

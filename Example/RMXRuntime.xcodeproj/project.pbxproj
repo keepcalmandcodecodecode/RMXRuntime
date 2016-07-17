@@ -12,6 +12,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		8C2064B91D3C08470074E55F /* SomeNSProxyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C2064B81D3C08470074E55F /* SomeNSProxyClass.m */; };
 		C46B84A392AA212E0C819037 /* Pods_RMXRuntime_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D4B75E543118C2EF273273 /* Pods_RMXRuntime_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7FD41722CA91388F81E4C9C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		8520CAA221F5A7C9AA9B8CF0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		8C2064B71D3C08470074E55F /* SomeNSProxyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeNSProxyClass.h; sourceTree = "<group>"; };
+		8C2064B81D3C08470074E55F /* SomeNSProxyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SomeNSProxyClass.m; sourceTree = "<group>"; };
 		F3DDF5518A685F7ACE92D340 /* Pods-RMXRuntime_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RMXRuntime_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RMXRuntime_Tests/Pods-RMXRuntime_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +85,8 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				8C2064B71D3C08470074E55F /* SomeNSProxyClass.h */,
+				8C2064B81D3C08470074E55F /* SomeNSProxyClass.m */,
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -237,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2064B91D3C08470074E55F /* SomeNSProxyClass.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
