@@ -1,0 +1,7 @@
+use_frameworks!
+target 'RMXRuntime_Tests' do
+  pod 'RMXRuntime', :path => '../'
+  
+  pod 'Specta'
+  pod 'Expecta'
+end
