@@ -1,9 +1,9 @@
 {
   "name": "RMXRuntime",
   "version": "0.1.0",
-  "summary": "A short description of RMXRuntime.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RMXRuntime",
+  "summary": "Shortcuts for runtime",
+  "description": "Collection of various shortcuts for runtime.",
+  "homepage": "https://github.com/keepcalmandcodecodecode/RMXRuntime",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
